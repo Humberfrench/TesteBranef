@@ -19,3 +19,5 @@ O sistema de cadastro de clientes contém os seguintes campos:
 ## Pacotes NuGet
 
 Para obter os pacotes DietCode NuGet, basta adicionar este source ao Visual Studio:
+
+[https://nuget.dietcode.com.br/nuget](https://nuget.dietcode.com.br/nuget)
