@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Dietcode.Api.Core.Results" Version="2.0.0" />
+    <PackageReference Include="Dietcode.Core.DomainValidator" Version="2.0.0" />
+    <PackageReference Include="Dietcode.Core.Lib" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Teste.Branef.Domain\Teste.Branef.Domain.csproj" />
+    <ProjectReference Include="..\Teste.Branef.ViewModel\Teste.Branef.ViewModel.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -10,7 +10,7 @@ namespace Teste.Branef.Repository.Base
     public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class, new()
     {
         protected DbSet<TEntity> DbSet;
-        protected readonly TesteBanefContext Context;
+        protected readonly TesteBranefContext Context;
         protected readonly string connectionString;
         private readonly IContextManager contextManager;
 

@@ -4,7 +4,7 @@ namespace Teste.Branef.Repository.Interfaces
 {
     public interface IContextManager
     {
-        TesteBanefContext GetContext();
+        TesteBranefContext GetContext();
         string GetConnectionString { get; }
     }
 }

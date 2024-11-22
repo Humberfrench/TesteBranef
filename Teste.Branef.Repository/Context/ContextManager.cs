@@ -13,17 +13,17 @@ namespace Teste.Branef.Repository.Context
 
         public string GetConnectionString => configuration.GetConnectionString("branefContext") ?? "";
 
-        public TesteBanefContext GetContext()
+        public TesteBranefContext GetContext()
         {
             if (context.HttpContext == null)
-                return new TesteBanefContext();
+                return new TesteBranefContext();
 
             if (context.HttpContext.Items[CONTEXT_KEY] == null)
             {
-                context.HttpContext.Items.Add(CONTEXT_KEY, new TesteBanefContext());
+                context.HttpContext.Items.Add(CONTEXT_KEY, new TesteBranefContext());
             }
 
-            return context.HttpContext.Items[CONTEXT_KEY] as TesteBanefContext ?? new TesteBanefContext();
+            return context.HttpContext.Items[CONTEXT_KEY] as TesteBranefContext ?? new TesteBranefContext();
         }
 
     }

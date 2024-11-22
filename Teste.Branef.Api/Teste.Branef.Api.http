@@ -1,6 +1,22 @@
-@Teste.Branef.Api_HostAddress = http://localhost:5104
-
-GET {{Teste.Branef.Api_HostAddress}}/weatherforecast/
+### Obter Todos os Clientes
+GET http://localhost:32769/api/Clientes
 Accept: application/json
 
-###
+### Adicionar um Cliente
+POST http://localhost:32769/api/Clientes
+Content-Type: application/json
+
+{
+    "nome": "Cliente Exemplo",
+    "porte": "M",
+    "telefone": "123456789",
+    "email": "cliente@exemplo.com"
+}
+
+### Obter Cliente por Id
+GET http://localhost:32769/api/Clientes/1
+Accept: application/json
+
+### Excluir Cliente
+DELETE http://localhost:32769/api/Clientes/1
+Accept: application/json
