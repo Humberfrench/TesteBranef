@@ -1,0 +1,9 @@
+.vs/
+Teste.Branef.Api/obj/
+Teste.Branef.App/obj/
+Teste.Branef.Domain/obj/
+Teste.Branef.Ioc/obj/
+Teste.Branef.Repository/obj/
+Teste.Branef.Services/obj/Debug/net9.0/Teste.Branef.Services.AssemblyInfoInputs.cache
+Teste.Branef.Services/obj/
+Teste.Branef.ViewModel/obj/

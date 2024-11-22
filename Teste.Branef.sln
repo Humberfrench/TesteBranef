@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35514.174 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teste.Branef.Api", "Teste.Branef.Api\Teste.Branef.Api.csproj", "{9E840761-B87D-47AF-9AB4-23BE57419DAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Rest", "1 - Rest", "{3D94BEE3-42A6-4911-832F-38F7AC166931}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - App - Proxy", "2 - App - Proxy", "{7439B1F6-4AB9-413C-AFB2-EB4A0B4C4698}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{970E5511-AEA3-4934-842A-BECE841AED58}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Servies", "4 - Servies", "{ABD38468-4E8E-4804-A2A6-A7523DD4258E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Repository", "5 - Repository", "{89A88A59-1613-4D1E-8F9A-C31C82F56971}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teste.Branef.Repository", "Teste.Branef.Repository\Teste.Branef.Repository.csproj", "{B376974D-FC85-4B4C-8F62-F6016FC33CE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teste.Branef.Services", "Teste.Branef.Services\Teste.Branef.Services.csproj", "{CF5DB6D2-9524-4473-847C-A4DB5ED11572}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teste.Branef.Domain", "Teste.Branef.Domain\Teste.Branef.Domain.csproj", "{DCDE272B-0123-48BC-AA68-8281861629F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teste.Branef.App", "Teste.Branef.App\Teste.Branef.App.csproj", "{BCD6D627-6383-4025-9306-E41D34413389}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teste.Branef.ViewModel", "Teste.Branef.ViewModel\Teste.Branef.ViewModel.csproj", "{F101CE03-E890-4D29-B5E1-A17BB9F3B142}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ioc", "Ioc", "{13D3D1E8-7655-4A6C-8451-19B66DC2E21F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teste.Branef.Ioc", "Teste.Branef.Ioc\Teste.Branef.Ioc.csproj", "{B01D4088-5DEC-4648-9C6E-D9C2E0A961CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E840761-B87D-47AF-9AB4-23BE57419DAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E840761-B87D-47AF-9AB4-23BE57419DAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E840761-B87D-47AF-9AB4-23BE57419DAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E840761-B87D-47AF-9AB4-23BE57419DAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B376974D-FC85-4B4C-8F62-F6016FC33CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B376974D-FC85-4B4C-8F62-F6016FC33CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B376974D-FC85-4B4C-8F62-F6016FC33CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B376974D-FC85-4B4C-8F62-F6016FC33CE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF5DB6D2-9524-4473-847C-A4DB5ED11572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF5DB6D2-9524-4473-847C-A4DB5ED11572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF5DB6D2-9524-4473-847C-A4DB5ED11572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF5DB6D2-9524-4473-847C-A4DB5ED11572}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCDE272B-0123-48BC-AA68-8281861629F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCDE272B-0123-48BC-AA68-8281861629F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCDE272B-0123-48BC-AA68-8281861629F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCDE272B-0123-48BC-AA68-8281861629F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCD6D627-6383-4025-9306-E41D34413389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCD6D627-6383-4025-9306-E41D34413389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCD6D627-6383-4025-9306-E41D34413389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCD6D627-6383-4025-9306-E41D34413389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F101CE03-E890-4D29-B5E1-A17BB9F3B142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F101CE03-E890-4D29-B5E1-A17BB9F3B142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F101CE03-E890-4D29-B5E1-A17BB9F3B142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F101CE03-E890-4D29-B5E1-A17BB9F3B142}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B01D4088-5DEC-4648-9C6E-D9C2E0A961CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B01D4088-5DEC-4648-9C6E-D9C2E0A961CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B01D4088-5DEC-4648-9C6E-D9C2E0A961CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B01D4088-5DEC-4648-9C6E-D9C2E0A961CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9E840761-B87D-47AF-9AB4-23BE57419DAA} = {3D94BEE3-42A6-4911-832F-38F7AC166931}
+		{B376974D-FC85-4B4C-8F62-F6016FC33CE6} = {89A88A59-1613-4D1E-8F9A-C31C82F56971}
+		{CF5DB6D2-9524-4473-847C-A4DB5ED11572} = {ABD38468-4E8E-4804-A2A6-A7523DD4258E}
+		{DCDE272B-0123-48BC-AA68-8281861629F6} = {970E5511-AEA3-4934-842A-BECE841AED58}
+		{BCD6D627-6383-4025-9306-E41D34413389} = {7439B1F6-4AB9-413C-AFB2-EB4A0B4C4698}
+		{F101CE03-E890-4D29-B5E1-A17BB9F3B142} = {7439B1F6-4AB9-413C-AFB2-EB4A0B4C4698}
+		{B01D4088-5DEC-4648-9C6E-D9C2E0A961CD} = {13D3D1E8-7655-4A6C-8451-19B66DC2E21F}
+	EndGlobalSection
+EndGlobal
