@@ -21,6 +21,14 @@ namespace Teste.Branef.Api
                 options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault;
             });
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAllOrigins",
+                    builder => builder.AllowAnyOrigin()
+                                      .AllowAnyMethod()
+                                      .AllowAnyHeader());
+            });
+
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen(options =>
             {
@@ -67,6 +75,8 @@ namespace Teste.Branef.Api
 
                 }
             });
+
+            app.UseCors("AllowAllOrigins");
 
             app.UseHttpsRedirection();
 
