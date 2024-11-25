@@ -41,7 +41,7 @@ namespace Teste.Branef.Domain.Entity
             }
             if (!IsTelefoneValido())
             {
-                errors.Add(new ValidationError("Telefone é inválido. Exemplo: (XX) XXXXX-XXXX ou (XX) XXXX-XXXX"));
+                errors.Add(new ValidationError("Telefone é inválido"));
             }
             if (!IsPorteValido())
             {

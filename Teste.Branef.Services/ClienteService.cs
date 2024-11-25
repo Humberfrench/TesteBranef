@@ -78,7 +78,7 @@ namespace Teste.Branef.Services
             var retorno = new ValidationResult<bool>();
 
             var cliente = await ObterPorId(id);
-            if (cliente == null)
+            if ((cliente == null) || (cliente.ClienteId == 0))
             {
                 retorno.Add("Cliente não encontrado");
                 retorno.Retorno = false;

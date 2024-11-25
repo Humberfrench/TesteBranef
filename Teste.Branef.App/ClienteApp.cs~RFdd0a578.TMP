@@ -24,7 +24,8 @@ namespace Teste.Branef.App
                 await Commit();
                 if (baseValidationResult.Invalid)
                 {
-                    return BadRequest(baseValidationResult.Erros[0].Message);
+                    var erros = string.Join(",", baseValidationResult.Erros);
+                    return BadRequest(erros);
                 }
             }
             else
@@ -33,10 +34,11 @@ namespace Teste.Branef.App
                 {
                     return NotFound("Cliente não encontrado");
                 }
-                return BadRequest(clienteExcluir.Erros[0].Message);
+                var erros = string.Join(",", clienteExcluir.Erros);
+                return BadRequest(erros);
             }
 
-            return Ok(true);
+            return Ok();
         }
 
         public async Task<MethodResult> Gravar(ClienteViewModel cliente)
@@ -50,7 +52,8 @@ namespace Teste.Branef.App
                 await Commit();
                 if (baseValidationResult.Invalid)
                 {
-                    return BadRequest(baseValidationResult.Erros[0].Message);
+                    var erros = string.Join(",", baseValidationResult.Erros);
+                    return BadRequest(erros);
                 }
             }
             else
@@ -59,7 +62,8 @@ namespace Teste.Branef.App
                 {
                     return NotFound("Cliente não encontrado");
                 }
-                return BadRequest(clienteGravar.Erros[0].Message);
+                var erros = string.Join(",", clienteGravar.Erros);
+                return BadRequest(erros);
             }
 
             return Ok();
@@ -76,7 +80,7 @@ namespace Teste.Branef.App
                 return NotFound("Cliente não encontrado");
             }
 
-            retorno = clientes.Retorno.ConvertObjects<List<ClienteViewModel>>();
+            retorno = clientes.ConvertObjects<List<ClienteViewModel>>();
 
             return Ok(retorno);
         }
@@ -90,7 +94,7 @@ namespace Teste.Branef.App
             {
                 return NotFound("Cliente não encontrado");
             }
-            retorno = clientes.Retorno.ConvertObjects<ClienteViewModel>();
+            retorno = clientes.ConvertObjects<ClienteViewModel>();
 
             return Ok(retorno);
         }
